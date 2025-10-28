@@ -1,0 +1,132 @@
+/* main */
+section {
+  background: url(../Images/background-img.jpg);
+  font-family: "Nanum Gothic", sans-serif;
+}
+section .container {
+  max-width: 1440px; 
+  padding-top: 700px;
+  margin: 0 auto 200px;
+}
+.container > nav {
+  margin-bottom: 100px;
+}
+.container > nav ul {
+  display: flex; 
+  justify-content: space-around;
+  border-bottom: 2px solid var(--brand_color2); 
+}
+.container > nav a {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 14px;
+  transition: 0.3s ease; 
+}
+.container > nav a:hover {color: var(--brand_color1);}
+.container > nav a.is-active {color: var(--brand_color1);
+}
+.container > h1 {
+  font-size: 1.875rem;
+  font-weight: 800; 
+  color:var(--brand_color1);
+  margin-bottom: 100px;
+  padding-left: 60px;
+}
+.list {
+  display: grid; 
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 40px;
+}
+.card {
+  width: 460px;
+  background-color: var(--white);
+  border-radius: 40px; 
+  overflow: hidden;
+  box-shadow: 3px 3px 12px rgba(0,0,0,.2);
+}
+.card-img {position: relative;}
+.card-img .thumb { 
+  position: relative; 
+  display: block; 
+}
+.card-img .thumb::after {
+  content: "";
+  position: absolute; 
+  inset: 0;
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(8px); 
+  opacity: 0; 
+  transition: opacity 0.4s ease;
+}
+.btn-profile {
+  width: 220px;
+  height: 65px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  position: absolute; 
+  left: 50%; 
+  top: 50%;
+  transform: translate(-50%,-50%) scale(.96);
+  opacity: 0; 
+  transition: opacity 0.4s ease, transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+  color: var(--brand_color2);
+  border-radius: 20px;
+  background-color: var(--white);
+  z-index: 9;
+}
+.btn-profile:hover {
+  color: var(--white);
+  background-color: var(--brand_color2);
+}
+.card:hover .thumb::after,
+.card:focus-within .thumb::after{ opacity:1; }
+.card:hover .btn-profile,
+.card:focus-within .btn-profile{
+  opacity:1; transform:translate(-50%,-50%) scale(1);
+}
+.card-img img {
+  display: block;
+  margin: 0 auto;
+  max-height:100%; width:auto;            
+  object-fit:contain;
+  padding: 20px 20px 0 20px;
+}
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+  margin: 20px 36px 40px;
+}
+.card-info > span {    
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--brand_color2);            
+  line-height: 1; 
+  min-width: 92px;
+  text-align: center;
+}
+.player-name {
+  display: flex; 
+  flex-direction: column; 
+  text-align: center;
+  gap: 7px;
+}
+.player-name .ko {
+  font-size: 3.125rem;
+  font-weight: 700; 
+  color: var(--black);
+}
+.player-name .en {
+  font-size: 1.5rem; 
+  letter-spacing:.6px; 
+  color: var(--black);
+}
+
+

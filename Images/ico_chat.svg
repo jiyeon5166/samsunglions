@@ -1,0 +1,16 @@
+<svg id="상담원연결" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_51" data-name="사각형 51" width="19.383" height="8.509" fill="#0f4f9e"/>
+    </clipPath>
+  </defs>
+  <circle id="타원_13" data-name="타원 13" cx="30" cy="30" r="30" fill="#0f4f9e"/>
+  <g id="그룹_54" data-name="그룹 54" transform="translate(-1783.143 -1003.844)">
+    <path id="합치기_1" data-name="합치기 1" d="M0,16.848A16.848,16.848,0,1,1,31.572,25.04l2.291,5.837a2,2,0,0,1-2.209,2.7l-7.015-1.237a2.015,2.015,0,0,1-.647-.231A16.855,16.855,0,0,1,0,16.848Z" transform="translate(1796 1017)" fill="#fff"/>
+    <g id="그룹_53" data-name="그룹 53" transform="translate(1803.401 1034.622)">
+      <g id="그룹_52" data-name="그룹 52" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="패스_35" data-name="패스 35" d="M.39,2.1,2.977.188A.953.953,0,0,1,4.213.273C5.273,1.323,7.642,3.425,9.648,3.425S14.245,1.311,15.4.264A.959.959,0,0,1,16.665.24l2.377,2.007A.952.952,0,0,1,19.3,3.37C18.572,4.959,16.154,8.753,9.671,8.5,3.364,8.248.9,4.851.107,3.306A.956.956,0,0,1,.39,2.1" transform="translate(0 0)" fill="#0f4f9e"/>
+      </g>
+    </g>
+  </g>
+</svg>

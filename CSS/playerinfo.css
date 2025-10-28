@@ -1,0 +1,261 @@
+html { overflow-x: clip; }
+/* 카테고리 */
+section {
+  background: url(../Images/background-img.jpg);
+  font-family: "Nanum Gothic", sans-serif;
+}
+section .container {
+  max-width: 1440px; 
+  padding-top: 700px;
+  margin: 0 auto 200px;
+}
+.container > nav {
+  margin-bottom: 100px;
+}
+.container > nav ul {
+  display: flex; 
+  justify-content: space-around;
+  border-bottom: 2px solid var(--brand_color2); 
+}
+.container > nav a {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 14px;
+  transition: 0.3s ease; 
+}
+.container > nav a:hover {color: var(--brand_color1);}
+.container > nav a.is-active {color: var(--brand_color1);
+}
+
+/* 선수정보 */
+.player-hero {
+  width: 100%;
+  height: 422px;
+  background: url(../Images/koojawook-banner.jpg) center/cover no-repeat;
+}
+.player-hero .hero-inner {
+  max-width: 1440px;
+  height: 100%;
+  margin:0 auto;
+  display: flex;
+  color: var(--black);
+  position: relative;
+}
+.player-hero .hero-inner .hero-left {
+  position: absolute;
+  top: 35px;
+  left: 100px;
+}
+.player-hero .position {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.player-hero .backno {
+  font-family: 'SBAggroM', 'sans-serif';
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.player-hero .hero-inner .hero-right {
+  position: absolute;
+  bottom: 35px;
+  right: 100px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 40px;
+}
+.player-hero .hero-inner .hero-right span {
+  display: inline-block;
+  width: 100px;
+}
+
+/* 기록 카테고리 */
+.player-record {
+  max-width: 1440px; 
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.record-tab {
+  display:flex; 
+  gap: 160px;
+  padding: 0 0 14px 73px; 
+  border-bottom: 2px solid var(--brand_color2);
+}
+.record-tab a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--black);
+}
+.record-tab a.is-active{color:var(--brand_color1);}
+.record-tab a:hover {color:var(--brand_color1);}
+.record-panel {margin-top: 40px;}
+.stats-card {
+  padding: 50px;
+  display:grid; 
+  grid-template-columns:repeat(5,1fr); 
+  gap: 10px 24px;
+  background-color: #F5F5F5;
+  border-radius: 40px; 
+  margin: 0 20px;
+}
+.metric {
+  text-align: center; 
+  padding: 16px 8px;
+}
+.metric b {
+  display:block; 
+  color:var(--brand_color2); 
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.metric span {
+  display: block; 
+  margin-top: 16px; 
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:var(--black);
+}
+/* 썸네일 카드 */
+.player-sing {
+  max-width: 1440px; 
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.player-sing .sing-inner {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+.player-sing img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      
+  object-position: center;
+} 
+.audio-thumb .play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 2rem;
+  background: var(--white);
+  color: var(--brand_color1);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; 
+}
+.audio-thumb:hover .play-icon {
+  transform:translate(-50%,-50%) scale(1.06);}
+.audio-thumb.is-playing .play-icon {
+  content:"❚❚"; 
+}
+/* 선수카드 슬라이드 */
+.swiper {
+  max-width: 1440px;
+  margin: 100px auto;         
+  padding: 4px 4px 24px;     
+  overflow: visible;        
+}
+.swiper-slide {
+  width: 360px;
+  height: auto;
+} 
+.swiper-scrollbar {background:rgba(0,0,0,.08);}
+.swiper-scrollbar-drag {background:var(--brand_color1);}
+.swiper-wrapper {transition-timing-function: linear !important;}
+/* card */
+.card {
+  width: 360px;
+  background-color: var(--white);
+  border-radius: 30px; 
+  overflow: hidden;
+  box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+}
+.card-img {position: relative;}
+.card-img .thumb { 
+  position: relative; 
+  display: block; 
+}
+.card-img .thumb::after {
+  content: "";
+  position: absolute; 
+  inset: 0;
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(8px); 
+  opacity: 0; 
+  transition: opacity 0.4s ease;
+}
+.btn-profile {
+  width: 220px;
+  height: 65px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  position: absolute; 
+  left: 50%; 
+  top: 50%;
+  transform: translate(-50%,-50%) scale(.96);
+  opacity: 0; 
+  transition: opacity 0.4s ease, transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+  color: var(--brand_color2);
+  border-radius: 20px;
+  background-color: var(--white);
+  z-index: 9;
+}
+.btn-profile:hover {
+  color: var(--white);
+  background-color: var(--brand_color2);
+}
+.card:hover .thumb::after,
+.card:focus-within .thumb::after{ opacity:1; }
+.card:hover .btn-profile,
+.card:focus-within .btn-profile{
+  opacity:1; transform:translate(-50%,-50%) scale(1);
+}
+.card-img img {
+  display: block;
+  margin: 0 auto;
+  max-height:100%; width:auto;            
+  object-fit:contain;
+  padding: 20px 20px 0 20px;
+}
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+  margin: 20px 36px 40px;
+}
+.card-info > span {    
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--brand_color2);            
+  line-height: 1; 
+  min-width: 92px;
+  text-align: center;
+}
+.player-name {
+  display: flex; 
+  flex-direction: column; 
+  text-align: center;
+  gap: 5px;
+}
+.player-name .ko {
+  font-size: 2.5rem;
+  font-weight: 700; 
+  color: var(--black);
+}
+.player-name .en {
+  font-size: 1.2rem; 
+  letter-spacing:.6px; 
+  color: var(--black);
+}
