@@ -232,37 +232,8 @@
   color: var(--brand_color1);
   margin: 0 0 30px 30px;
 }
-.video_box {
-  width: 100%;
-  aspect-ratio: 16/9;
-  border-radius: 40px;
-  overflow: hidden;
-}
-.video_box summary {
-  list-style: none;
-  cursor: pointer;
-  position: relative;
-  height: 100%;
-}
-.video_box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.play_btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 64px;
-  color: var(--white);
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px 28px;
-  border-radius: 50%;
-}
-.video_box[open] summary {
-  display: none;
+.youtube_section .container iframe {
+  border-radius: 20px;
 }
 .video_list {
   display: flex;
